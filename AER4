@@ -1,0 +1,72 @@
+// C++ code
+// aluno: João Marcos de Oliveira Ferreira
+// Turma "B" de Eletroeletrônica de 2020
+//
+
+void setup() // declarações de Pinos 
+{
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(4, OUTPUT);
+}
+
+
+void loop()
+{
+ 
+  while (0 == 0) {         // cond 4
+    
+    digitalWrite(11, HIGH);
+    digitalWrite(8, HIGH);
+    digitalWrite(7, HIGH);
+    digitalWrite(5, HIGH);
+// ligados cond 1
+    digitalWrite(13, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(6, LOW);
+    digitalWrite(4, LOW);
+// desligados cond 1
+   
+    
+    delay(5000); // Delay 5000 milisegundos
+    
+    digitalWrite(11,LOW);
+    digitalWrite(8, LOW);
+// desligados cond 2
+    
+    digitalWrite(12, HIGH);
+    digitalWrite(9, HIGH);
+// ligados cond 2 
+    
+    
+    delay(2000);// Delay 2000 milisegundos
+      
+    
+    digitalWrite(12, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(7, LOW);
+    digitalWrite(5, LOW);
+ // desligados cond 3 
+   
+    
+    
+    digitalWrite(13, HIGH);
+    digitalWrite(10, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(4, HIGH);
+//  ligados cond 3
+    
+    delay(5000);// Delay 5000 milisegundos
+	
+    
+    
+        
+  }
+}
